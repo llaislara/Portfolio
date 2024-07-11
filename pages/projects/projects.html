@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="UTF-8">
+
+    <title>LaiScript</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="icon" href="../../img/favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="../../img/favicon/favico.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../../img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="../../img/favicon/manifest.webmanifest">
+
+    <link rel="stylesheet" href="../../css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="../../css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#dcdce7">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111111">
+    <meta name="msapplication-navbutton-color" content="#111111">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+     
+  </head>
+
+  <body id="top">
+
+    <div id="loader" class="loader">
+      <div id="loaderContent" class="loader__content">
+        <div class="loader__shadow"></div>
+        <div class="loader__box"></div>
+      </div>
+    </div>
+
+    <div  class="scroll-top-btn hidden">
+      <a href="#top" class="scroll-top-btn__link slide-up">
+        <i class="ph-bold ph-arrow-up"></i>
+      </a>
+    </div>
+
+    <header id="header" class="header d-flex justify-content-between">
+
+      <div class="header__navigation">
+
+        <nav id="menu" class="menu">
+          <ul class="menu__list d-flex justify-content-start">
+            <li class="menu__item">
+              <a class="menu__link btn" href="../../index.html#home">
+                <span class="menu__caption">Home</span>
+                <i class="ph-bold ph-house-simple"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="../../index.html#portfolio">
+                <span class="menu__caption">Portfolio</span>
+                <i class="ph-bold ph-squares-four"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="../../index.html#about">
+                <span class="menu__caption">About Me</span>
+                <i class="ph-bold ph-user"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="../../index.html#resume">
+                <span class="menu__caption">Resume</span>
+                <i class="ph-bold ph-article"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="../../index.html#contact">
+                <span class="menu__caption">Contact</span>
+                <i class="ph-bold ph-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__controls d-flex justify-content-end">
+        <button id="color-switcher" class="color-switcher header__switcher btn" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
+        
+        <div class="lang-box"> 
+          <div id="lang_selector" class="language-dropdown">
+            <img id="iconPT" src="../../img/icons/iconPT.svg" class="hidden lang-flag" alt="Portuguese Icon">
+            <img id="iconEN" src="../../img/icons/iconEN.svg" class="hidden lang-flag" alt="English Icon">
+            <ul class="lang-list">
+              <li class="lang lang-en" title="EN">
+                <img src="../../img/icons/iconEN.svg" alt="English Icon">
+              </li>
+              <li class="lang lang-pt" title="PT" style="display: none;">
+                <img src="../../img/icons/iconPT.svg" alt="Portuguese Icon">
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        
+        <a id="notify-trigger" class="header__trigger btn" href="mailto:lais.lara.baptista@gmail.com?subject=Message%20from%20your%20site">
+          <span class="trigger__caption">Contato</span>
+          <i class="ph-bold ph-chat-dots"></i>
+        </a>
+      </div>
+
+
+    </header>
+
+    <div class="gradient-background">
+      <div class="blur"></div>
+      <div class="blur"></div>
+      <div class="blur"></div>
+    </div>
+
+    <div id="content" class="content" style="padding-left: 0 !important;">
+      <div class="content__wrapper">
+
+        <section id="portfolio" class="inner inner-first portfolio">
+
+          <div class="content__block section-grid-title">
+            <h2 class="h2__title animate-in-up">Check out my projects</h2>
+            <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline" href="../../index.html#portfolio" style="margin-top: 10px;">
+              <span class="btn-caption">Back</span>
+              <i class="ph ph-arrow-u-down-left"></i>
+            </a>
+          </div>
+
+          <div class="content__block grid-block">
+            <div class="container-fluid px-0 inner__gallery">
+              <div class="row gx-0 my-gallery" itemscope itemtype="http://schema.org/ImageGallery" >
+    
+                <figure class="col-12 col-md-3 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerCertify.png" data-image="../../img/works/bannerCertify.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerCertify.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr opposite" itemprop="caption description">
+                    <h5 class="opposite">Certify</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://certify-eight.vercel.app/" target="_blank"> <i class="fa fa-rss" aria-hidden="true"></i> Live </a></p>
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/Certify" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">jsPDF</span>
+                      <span class="rounded-tag opposite">JSZip</span>
+                    </div>
+                    <p class="small">Certify is a streamlined digital certificate generation platform tailored for events. It aims to simplify the certificate creation process, 
+                      enabling batch generation and advanced customization with digital signatures and QR codes for authentication.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="col-12 col-md-3 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerFlic.png" data-image="../../img/works/bannerFlic.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerFlic.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr opposite" itemprop="caption description">
+                    <h5 class="opposite">TMDb Consultant</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://flic-blue.vercel.app/" target="_blank"> <i class="fa fa-rss" aria-hidden="true"></i> Live </a></p>
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/FlicTMDb" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag">TMDb API</span>
+                      <span class="rounded-tag">React</span>
+                    </div>
+                    <p class="small">Flic is a movie and series application that allows users to explore a vast catalog of content. Users can browse movies and series, 
+                      view cast and crew details, and use filters to find exactly what they are looking for.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="col-12 col-md-3 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerManagementSystem.png" data-image="../../img/works/bannerManagementSystem.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerManagementSystem.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr opposite" itemprop="caption description">
+                    <h5 class="opposite">Management System</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/Management-System" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">PHP</span>
+                      <span class="rounded-tag opposite">Mysql</span>
+                    </div>
+                    <p class="small">Database management system in PHP for inserting, deleting and editing data.
+                    </p>
+                  </figcaption>
+                </figure>
+                
+                <figure class="col-12 col-md-3 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerProfileOld.png" data-image="../../img/works/bannerProfileOld.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerProfileOld.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr opposite" itemprop="caption description">
+                    <h5 class="opposite">Professional Portfolio</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://llaislara.github.io/meu-portfolio/" target="_blank"> <i class="fa fa-rss" aria-hidden="true"></i> Live </a></p>
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/meu-portfolio" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">JavaScript</span>
+                      <span class="rounded-tag opposite">Bootstrap</span>
+                    </div>
+                    <p class="small">Professional portfolio in multiple languages ​and themes. Simple, intuitive and responsive design.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="col-12 col-md-3 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerColorCraft.png" data-image="../../img/works/bannerColorCraft.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerColorCraft.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr opposite" itemprop="caption description">
+                    <h5 class="opposite">Color Craft</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://llaislara.github.io/ColorCraft/" target="_blank"> <i class="fa fa-rss" aria-hidden="true"></i> Live </a></p>
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/ColorCraft" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">Vue.js</span>
+                    </div>
+                    <p class="small">This Vue.js application allows users to generate a color palette by selecting two main colors and specifying the number of steps between them.
+                      Colors are interpolated to create a smooth transition between your chosen colors.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="col-12 col-md-3 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerRecipes.png" data-image="../../img/works/bannerRecipes.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerRecipes.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr opposite" itemprop="caption description">
+                    <h5 class="opposite">Recipes Explorer</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://llaislara.github.io/ColorCraft/" target="_blank"> <i class="fa fa-rss" aria-hidden="true"></i> Live </a></p>
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/Spoonful_react_app" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">React</span>
+                      <span class="rounded-tag opposite">JavaScript</span>
+                    </div>
+                    <p class="small">Spoonful is a React project that empowers users to delve into the world of recipes utilizing the Spoonacular API. 
+                      To embark on your Spoonful journey, you'll need to acquire a complimentary Spoonacular API key and configure it within the project.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="col-12 col-md-3 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerWeatherMap.png" data-image="../../img/works/bannerWeatherMap.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerWeatherMap.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr opposite" itemprop="caption description">
+                    <h5 class="opposite"> Weather Map</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://codepen.io/La-s-Lara/pen/vYbwBVj?editors=1010" target="_blank"> <i class="fa fa-rss" aria-hidden="true"></i> Live </a></p>
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/MultiHub---API-Open-Weather-Map" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">Open Weather API</span>
+                      <span class="rounded-tag opposite">JavaScript</span>
+                    </div>
+                    <p class="small">Web application that provides weather information according to the user's current location.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="col-12 col-md-3 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerCrud.png" data-image="../../img/works/bannerCrud.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerCrud.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr opposite" itemprop="caption description">
+                    <h5 class="opposite">CRUD</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/CRUD_Php" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">PHP</span>
+                      <span class="rounded-tag opposite">XAMPP</span>
+                      <span class="rounded-tag opposite">Mysql</span>
+                    </div>
+                    <p class="small">Database management system in PHP with XAMPP for inserting, deleting and editing data.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="col-12 col-md-3 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerHandAudioControl.png" data-image="../../img/works/bannerHandAudioControl.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerHandAudioControl.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr " itemprop="caption description">
+                    <h5>Hand Audio Control</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/HandAudioControl" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag">Python</span>
+                    </div>
+                    <p class="small">This is a Python program that uses computer vision to control computer functions with hand gestures.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="col-12 col-md-3 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerPokedex.png" data-image="../../img/works/bannerPokedex.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerPokedex.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr " itemprop="caption description">
+                    <h5>Pokedex</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://codepen.io/La-s-Lara/pen/MWLNWma" target="_blank"> <i class="fa fa-rss" aria-hidden="true"></i> Live </a></p>
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/Pokedex-Web-App" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">JavaScript</span>
+                      <span class="rounded-tag opposite">PokéAPI</span>
+                    </div>
+                    <p class="small">Interface for exploring and searching for Pokémon. It includes a variety of features such as type navigation, search bar, and Pokémon listing.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="col-12 col-md-3 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerR.png" data-image="../../img/works/bannerR.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerR.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr " itemprop="caption description">
+                    <h5>R Logical Problems</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/RProgrammingLogicProblems" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">R</span>
+                    </div>
+                    <p class="small">Programming Logic Problems Solved in R.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="col-12 col-md-3 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerC.png" data-image="../../img/works/bannerC.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerC.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr " itemprop="caption description">
+                    <h5>C Logical Problems</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/CProgrammingLogicProblems" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">C</span>
+                    </div>
+                    <p class="small">Programming Logic Problems Solved in C.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="col-12 col-md-3 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerC++.png" data-image="../../img/works/bannerC++.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerC++.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr " itemprop="caption description">
+                    <h5>C Logical Problems</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/CPlusPlus_ProgrammingLogicProblems" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">C++</span>
+                    </div>
+                    <p class="small">Programming Logic Problems Solved in C++.
+                    </p>
+                  </figcaption>
+                </figure>
+               
+              </div>          
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+      <div class="pswp__bg"></div>
+
+      <div class="pswp__scroll-wrap">
+
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
+            <button class="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
+            <button class="pswp__button pswp__button--zoom link-s" title="Zoom in/out"></button>
+                    
+            <div class="pswp__preloader">
+               <div class="pswp__preloader__icn">
+                  <div class="pswp__preloader__cut">
+                     <div class="pswp__preloader__donut"></div>
+                  </div>
+               </div>
+            </div>
+          </div>
+         
+
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+
+          <button class="pswp__button pswp__button--arrow--left link-s" title="Previous (arrow left)"></button>
+          <button class="pswp__button pswp__button--arrow--right link-s" title="Next (arrow right)"></button>
+
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="../../js/libs.min.js"></script>
+    <script>
+      const randomX = random(-400, 400);
+      const randomY = random(-200, 200);
+      const randomDelay = random(0, 50);
+      const randomTime = random(20, 40);
+      const randomTime2 = random(5, 12);
+      const randomAngle = random(-30, 150);
+
+      const blurs = gsap.utils.toArray(".blur");
+      blurs.forEach((blur) => {
+        gsap.set(blur, {
+          x: randomX(-1),
+          y: randomX(1),
+          rotation: randomAngle(-1)
+        });
+
+        moveX(blur, 1);
+        moveY(blur, -1);
+        rotate(blur, 1);
+      });
+
+      function rotate(target, direction) {
+        gsap.to(target, randomTime2(), {
+          rotation: randomAngle(direction),
+          ease: Sine.easeInOut,
+          onComplete: rotate,
+          onCompleteParams: [target, direction * -1]
+        });
+      }
+
+      function moveX(target, direction) {
+        gsap.to(target, randomTime(), {
+          x: randomX(direction),
+          ease: Sine.easeInOut,
+          onComplete: moveX,
+          onCompleteParams: [target, direction * -1]
+        });
+      }
+
+      function moveY(target, direction) {
+        gsap.to(target, randomTime(), {
+          y: randomY(direction),
+          ease: Sine.easeInOut,
+          onComplete: moveY,
+          onCompleteParams: [target, direction * -1]
+        });
+      }
+
+      function random(min, max) {
+        const delta = max - min;
+        return (direction = 1) => (min + delta * Math.random()) * direction;
+      }
+    </script>
+    <script src="../../js/app.js"></script>
+    <script src="../../js/gallery-init.js"></script>
+    
+  </body>
+</html>

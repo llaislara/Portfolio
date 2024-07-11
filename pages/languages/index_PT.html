@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+
+  
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="UTF-8">
+
+    <title>LaiScript</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="icon" href="../../img/favicon/favico.svg" sizes="any">
+    <link rel="icon" href="../../img/favicon/favicon.svg" sizes="any">
+    <link rel="icon" href="../../img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="../../img/favicon/manifest.webmanifest">
+
+    <link rel="stylesheet" href="../../css/loaders/loader.css">
+    <link rel="stylesheet" type="text/css" href="../../css/plugins.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#dcdce7">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111111">
+    <meta name="msapplication-navbutton-color" content="#111111">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  </head>
+
+  <body id="top">
+
+    <div id="loader" class="loader">
+      <div id="loaderContent" class="loader__content">
+        <div class="loader__shadow"></div>
+        <div class="loader__box"></div>
+      </div>
+    </div>
+
+    <div  class="scroll-top-btn hidden">
+      <a href="#top" class="scroll-top-btn__link slide-up">
+        <i class="ph-bold ph-arrow-up"></i>
+      </a>
+    </div>
+
+    <header id="header" class="header d-flex justify-content-between">
+
+      <div class="header__navigation">
+        <nav id="menu" class="menu">
+          <ul class="menu__list d-flex justify-content-start">
+            <li class="menu__item">
+              <a class="menu__link btn" href="./index_PT.html#home">
+                <span class="menu__caption">Início</span>
+                <i class="ph-bold ph-house-simple"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="./index_PT.html#portfolio">
+                <span class="menu__caption">Portfólio</span>
+                <i class="ph-bold ph-squares-four"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="./index_PT.html#about">
+                <span class="menu__caption">Sobre</span>
+                <i class="ph-bold ph-user"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="./index_PT.html#resume">
+                <span class="menu__caption">Resumo</span>
+                <i class="ph-bold ph-article"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="./index_PT.html#contact">
+                <span class="menu__caption">Contato</span>
+                <i class="ph-bold ph-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__controls d-flex justify-content-end">
+        <button id="color-switcher" class="color-switcher header__switcher btn" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
+        
+        <div id="lang_selector" class="language-dropdown">
+          <img id="iconPT" src="../../img/icons/iconPT.svg" class="hidden lang-flag" alt="Portuguese Icon">
+          <img id="iconEN" src="../../img/icons/iconEN.svg" class="hidden lang-flag" alt="English Icon">
+          <ul class="lang-list">
+            <li class="lang lang-en" title="EN">
+              <img src="../../img/icons/iconEN.svg" alt="English Icon">
+            </li>
+            <li class="lang lang-pt" title="PT" style="display: none;">
+              <img src="../../img/icons/iconPT.svg" alt="Portuguese Icon">
+            </li>
+          </ul>
+        </div>
+        
+        <a id="notify-trigger" class="header__trigger btn" href="mailto:lais.lara.baptista@gmail.com?subject=Message%20from%20your%20site">
+          <span class="trigger__caption">Contato</span>
+          <i class="ph-bold ph-chat-dots"></i>
+        </a>
+      </div>
+
+    </header>
+
+    <div class="gradient-background">
+      <div class="blur"></div>
+      <div class="blur"></div>
+      <div class="blur"></div>
+    </div>
+
+    <div id="avatar" class="avatar">
+      <div class="avatar__container d-flex flex-column justify-content-lg-between">
+        <div class="avatar__block">
+          <div class="avatar__image">
+            <img src="../../img/avatars/personalPic.jpg" alt="">
+          </div>
+        </div>
+        <div class="avatar__block">
+          <h6>
+            <small class="top">Especialização:</small>
+            Engenheira de Software
+          </h6>
+        </div>
+        <div class="avatar__block">
+          <h6>
+            <small class="top">Localização:</small>
+            Bahia, Brasil
+          </h6>
+        </div>
+        <div class="avatar__block">
+          <div class="avatar__socials">
+            <ul class="socials-square d-flex justify-content-between" style="display: flex; justify-content: center !important; gap: 4%;">
+              <li class="socials-square__item">
+                <a class="socials-square__link btn" href="https://www.linkedin.com/in/laisbaptista/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </li>
+              <li class="socials-square__item">
+                <a class="socials-square__link btn" href="https://github.com/llaislara" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+              </li>
+              <li class="socials-square__item">
+                <a class="socials-square__link btn" href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K8332116A4" target="_blank"><i class="fa fa-map-marker" aria-hidden="true" style="transform: rotate(24deg);"></i></a>
+              </li>
+             
+            </ul>
+          </div>
+          <div class="avatar__btnholder">
+            <a class="btn btn-default btn-fullwidth btn-hover btn-hover-accent" href="../../index.html#contact" target="_blank">
+              <span class="btn-caption">Vamos conversar!</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content" class="content">
+      <div class="content__wrapper">
+
+        <section id="home" class="main intro">
+
+          <div id="headline" class="headline d-flex align-items-start flex-column" data-speed="1">
+            <h1 class="headline__title animate-headline">Me chamo Laís Lara sou engenheira de software e designer.</h1>
+            <div class="headline__btnholder d-flex flex-column flex-sm-row">
+              <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline" href="../../index.html#portfolio">
+                <span class="btn-caption">Meus projetos</span>
+                <i class="ph-bold ph-squares-four"></i>
+              </a>
+              <a class="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline" href="#0">
+                <span class="btn-caption">Download CV</span>
+                <i class="ph-bold ph-download-simple"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="rotating-btn">
+            <a href="../languages/index_PT.html#portfolio" class="rotating-btn__link slide-down">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve" 
+                class="animate-rotation" data-value="360">
+                <defs>
+                  <path id="textPath" d="M110,59.5c0,27.6-22.4,50-50,50s-50-22.4-50-50s22.4-50,50-50S110,31.9,110,59.5z"/>
+                </defs>
+                <g>
+                  <use xlink:href="./index_PT.html#textPath" fill="none"></use>
+                  <text>
+                    <textPath xlink:href="./index_PT.html#textPath"> Deslize para mais * Deslize para mais * </textPath>
+                  </text>
+                </g>
+              </svg>
+              <i class="ph-bold ph-arrow-down"></i>
+            </a>
+          </div>
+
+        </section>
+
+        <section id="portfolio" class="inner inner-first portfolio">
+
+          <div class="content__block section-grid-title">
+            <p class="h2__subtitle animate-in-up">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
+              </svg>
+              <span>Portfólio</span>
+            </p>
+            <h2 class="h2__title animate-in-up">Projetos em destaque</h2>
+          </div>
+
+          <div class="content__block grid-block">
+            <div class="container-fluid px-0 inner__gallery">
+              <div class="row gx-0 my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    
+                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerCertifyPT.png" data-image="../../img/works/bannerCertifyPT.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerCertifyPT.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr" itemprop="caption description">
+                    <h5>Gerador de certificados</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://certify-eight.vercel.app/" target="_blank"> <i class="fa fa-rss" aria-hidden="true"></i> Live </a></p>
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/Certify" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">React</span>
+                      <span class="rounded-tag opposite">jsPDF</span>
+                      <span class="rounded-tag opposite">JSZip</span>
+                    </div>
+                    <p class="small">Certify é uma plataforma de geração de certificados digitais personalizada para eventos. 
+                      O objetivo é simplificar o processo de criação de certificados, permitindo a geração em lote e a 
+                      personalização avançada com assinatura digital e QR codes para autenticação.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerFlicPT.png" data-image="../../img/works/bannerFlicPT.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerFlicPT.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr opposite" itemprop="caption description">
+                    <h5 class="opposite">TMDb Consultant</h5>
+                    
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://flic-blue.vercel.app/" target="_blank"> <i class="fa fa-rss" aria-hidden="true"></i> Live </a></p>
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/FlicTMDb" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag">TMDb API</span>
+                      <span class="rounded-tag">React</span>
+                    </div>
+                    <p class="small">Flic é um aplicativo de filmes e séries que permite aos usuários explorarem um vasto catálogo de conteúdos. Os usuários podem navegar por filmes e séries,
+                      ver detalhes do elenco e usar filtros para encontrar exatamente o que procuram.
+                    </p>
+                  </figcaption>
+                </figure>
+    
+                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerManagementSystemPT.png" data-image="../../img/works/bannerManagementSystemPT.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerManagementSystemPT.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr opposite" itemprop="caption description">
+                    <h5 class="opposite">Sistema de Gerenciamento</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/Management-System" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">PHP</span>
+                      <span class="rounded-tag opposite">Mysql</span>
+                    </div>
+                    <p class="small">
+                      Sistema de gerenciamento de banco de dados em PHP para inserção, exclusão e edição de dados.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                  <a href="../../img/works/bannerProfileOldPT.png" data-image="../../img/works/bannerProfileOldPT.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                    <img src="../../img/works/bannerProfileOldPT.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                  </a>
+                  <figcaption class="gallery__descr " itemprop="caption description">
+                    <h5>Portfólio Professional</h5>
+                    <div class="gallery_links"> 
+                      <p><a class="gallery_link_live_code" href="https://llaislara.github.io/meu-portfolio/" target="_blank"> <i class="fa fa-rss" aria-hidden="true"></i> Live </a></p>
+                      <p><a class="gallery_link_live_code" href="https://github.com/llaislara/meu-portfolio" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Code </a></p>
+                    </div>
+                    <div class="card__tags d-flex flex-wrap">
+                      <span class="rounded-tag opposite">JavaScript</span>
+                      <span class="rounded-tag opposite">Bootstrap</span>
+                    </div>
+                    <p class="small">Portfólio profissional em multiplos idiomas e temas. Design simples, intuitivo e responsivo.
+                    </p>
+                  </figcaption>
+                </figure>
+
+              </div>          
+                <div class="headline__btnholder d-flex flex-column flex-sm-row" style="margin-left: 1.5%;">
+                  <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline" href="../projects/projects_PT.html">
+                    <span class="btn-caption">Ver mais projetos</span>
+                    <i class="ph ph-list-plus"></i>
+                  </a>
+                </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="about" class="inner about">
+
+          <div class="content__block section-grid-title">
+            <p class="h2__subtitle animate-in-up">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
+              </svg>
+              <span>Sobre</span>
+            </p>
+            <h2 class="h2__title animate-in-up">Transformando problemas complexos em scripts simples</h2>
+          </div>
+
+          <div class="content__block grid-block">
+            <div class="achievements d-flex flex-column flex-md-row align-items-md-stretch">
+              <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+                <div class="achievements__card">
+                  <p class="achievements__number">2+</p>
+                  <p class="achievements__descr">anos de experiência</p>
+                </div>
+              </div>
+              <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+                <div class="achievements__card">
+                  <p class="achievements__number">50+</p>
+                  <p class="achievements__descr">projetos entregues</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content__block grid-block block-large">
+            <div class="container-fluid p-0">
+              <div class="row g-0 justify-content-between">
+                
+                <div class="col-12 col-xl-8 grid-item about-descr">
+                  <p class="about-descr__text animate-in-up">
+                    Prazer em conhecer você! Meu nome é Laís e sou
+                    <a class="text-link">engenheira de software full stack.</a> 
+                  </p>
+                  <p class="about-descr__text animate-in-up">
+                    Sou apaixonada por dar vida a ideias e projetos inovadores,
+                    com um carinho especial por 
+                    <a class="text-link">desenvolvimento front-end</a> 
+                    em todos os seus aspectos. É aqui que minhas habilidades técnicas e criativas podem ser melhor utilizadas.
+                  </p>
+                  <p class="about-descr__text animate-in-up">
+                    Codificar para mim não é apenas meu trabalho; Gosto de experimentar diversas tecnologias e também
+                    manter alguns projetos pessoais. Sempre que posso, gosto de contribuir com projetos de código aberto para retribuir à comunidade.
+                  </p>
+                  <div class="btn-group about-descr__btnholder animate-in-up">
+                    <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent" href="#0">
+                      <span class="btn-caption">Download CV</span>
+                      <i class="ph-bold ph-download-simple"></i>
+                    </a>
+                  </div>
+                </div>
+      
+                <div class="col-12 col-xl-4 grid-item about-info">
+                  <div class="about-info__item animate-in-up">
+                    <h6>
+                      <small class="top">Nome</small>
+                      Laís Lara
+                    </h6>
+                  </div>
+                  <div class="about-info__item animate-in-up">
+                    <h6>
+                      <small class="top">Email</small>
+                      <a class="text-link-bold" href="mailto:lais.lara.baptista@gmail.com?subject=Message%20from%20your%20site">lais.lara.baptista@gmail.com</a>
+                    </h6>
+                  </div>
+                  <div class="about-info__item animate-in-up">
+                    <h6>
+                      <small class="top">Localização</small>
+                      <a class="text-link-bold" href="https://www.google.com/maps/place/Bahia/@-13.3747077,-47.2532138,6z/data=!3m1!4b1!4m6!3m5!1s0x716037ca23ca5b3:0x7e926f5fb491ed05!8m2!3d-11.4098737!4d-41.2808577!16zL20vMDFjOGM2?entry=ttu" target="_blank">Bahia, Brazil</a>
+                    </h6>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+
+          <div class="content__block grid-block">
+            <div class="container-fluid p-0">
+              <div class="row g-0 align-items-stretch cards">
+                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="cards__descr">
+                      <h4 class="cards__title animate-in-up">Desenvolvimento<br>Front-end</h4>
+                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                        <span class="rounded-tag tag-outline">Design Responsivo</span>
+                        <span class="rounded-tag tag-outline">Frontend Frameworks</span>
+                      </div>
+                      <p class="small cards__text animate-in-up">Trabalho com HTML/CSS, JavaScript e React.</p>
+                    </div>
+                    <div class="cards__image d-flex animate-in-up">
+                      <img src="../../img/services/frontendproject.webp" alt="Service/Feature Image">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="cards__descr">
+                      <h4 class="cards__title animate-in-up">Desenvolvimento<br>Back-end</h4>
+                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                        <span class="rounded-tag tag-outline">Integração de API</span>
+                        <span class="rounded-tag tag-outline">Conexão com banco de dados</span>
+                        <span class="rounded-tag tag-outline">Implementação de segurança</span>
+                      </div>
+                      <p class="small cards__text animate-in-up">Eu uso PHP, Python e Node.js para criar a estrutura lógica dos meus projetos.
+                      </p>
+                    </div>
+                    <div class="cards__image d-flex animate-in-up">
+                      <img src="../../img/services/backendproject.webp" alt="Service/Feature Image">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="cards__descr">
+                      <h4 class="cards__title animate-in-up">Gerenciador de banco de dados</h4>
+                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                        <span class="rounded-tag tag-outline">Gestão de dados</span>
+                        <span class="rounded-tag tag-outline">Modelagem de dados</span>
+                      </div>
+                      <p class="small cards__text animate-in-up">Eu uso MySQL e Oracle para design, implementação e gerenciamento de banco de dados.
+                      </p>
+                    </div>
+                    <div class="cards__image d-flex animate-in-up">
+                      <img src="../../img/services/dbaprojects.webp" alt="Service/Feature Image">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="cards__descr">
+                      <h4 class="cards__title animate-in-up">Arte digital e design gráfico</h4>
+                      <div class="cards__tags d-flex flex-wrap animate-in-up">
+                        <span class="rounded-tag tag-outline">UI/UX Design</span>
+                        <span class="rounded-tag tag-outline">Ilustrações</span>
+                      </div>
+                      <p class="small cards__text animate-in-up">Eu uso Adobe Illustrator e Figma para criar lindos designs.
+                      </p>
+                    </div>
+                    <div class="cards__image d-flex animate-in-up">
+                      <img src="../../img/services/designprojects.webp" alt="Service/Feature Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="resume" class="inner resume">
+
+          <div class="content__block block-large">
+            <p class="h2__subtitle animate-in-up">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
+              </svg>
+              <span>Resumo</span>
+            </p>
+            <h2 class="h2__title animate-in-up">Educação e experiência</h2>
+            <p class="h2__text animate-in-up">
+              Com muitos anos de estudo e dedicação e alguns em
+              <a class="text-link">desenvolvimento de software,</a> 
+              ganhei experiência trabalhando em projetos em
+              <a class="text-link">diversos setores e tecnologias.</a>
+              Deixe-me mostrar minhas melhores criações.
+            </p>
+          </div>
+
+            <div class="content__block block-large">
+
+              <div class="section-h3">
+                <h3 class="h3__title animate-in-up">Formação</h3>
+              </div>
+
+              <div class="container-fluid p-0 resume-lines">
+
+                <div class="row g-0 resume-lines__item animate-in-up">
+                  <div class="col-12 col-md-2">
+                    <span class="resume-lines__date animate-in-up">2021 - 2025</span>
+                  </div>
+                  <div class="col-12 col-md-5">
+                    <h5 class="resume-lines__title animate-in-up">Ciência da Computação</h5>
+                    <p class="resume-lines__source animate-in-up">Estudos feitos na
+                      <a class="text-link-bold" target="_blank">Universidade Salvador</a>
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-5">
+                    <p class="small resume-lines__descr animate-in-up">Graduação em Bacharelado em Ciências da Computação.</p>
+                  </div>
+                </div>
+
+                  <div class="col-12 col-md-2">
+                    <span class="resume-lines__date animate-in-up">2022</span>
+                  </div>
+
+                  <div class="col-12 col-md-5">
+                    <h5 class="resume-lines__title animate-in-up">UI/UX Designer</h5>
+                    <p class="resume-lines__source animate-in-up"> Estudos feitos na
+                      <a class="text-link-bold" target="_blank">Coursera</a>
+                    </p>
+                  </div>
+
+                  <div class="col-12 col-md-5">
+                    <p class="small resume-lines__descr animate-in-up">Curso sobre os Princípios de design de UX/UI.</p>
+                  </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="content__block block-large">
+
+            <div class="section-h3">
+              <h3 class="h3__title animate-in-up">Experiência Profissional</h3>
+            </div>
+
+            <div class="container-fluid p-0 resume-lines">
+              <div class="row g-0 resume-lines__item animate-in-up">
+                <div class="col-12 col-md-2">
+                  <span class="resume-lines__date animate-in-up">2024 - Atualmente </span>
+                </div>
+                <div class="col-12 col-md-5">
+                  <h5 class="resume-lines__title animate-in-up">Engenheira de Software</h5>
+                  <p class="resume-lines__source animate-in-up">na
+                    <a href="https://www.softwaredata.com.br/website/index.asp" class="text-link-bold" target="_blank">Software Data</a>
+                  </p>
+                </div>
+                <div class="col-12 col-md-5">
+                  <p class="small resume-lines__descr animate-in-up">Desenvolvimento e manutenção de sistemas em PHP, Laravel e Java. Manutenção e administração de bancos de dados Oracle e MySQL.</p>
+                </div>
+              </div>
+              
+              <div class="row g-0 resume-lines__item animate-in-up">
+                <div class="col-12 col-md-2">
+                  <span class="resume-lines__date animate-in-up"> 2024</span>
+                </div>
+                <div class="col-12 col-md-5">
+                  <h5 class="resume-lines__title animate-in-up">Professora de Algoritmos e Programação</h5>
+                  <p class="resume-lines__source animate-in-up">no 
+                    <a href="https://www.sefaz.feiradesantana.ba.gov.br/" class="text-link-bold" target="_blank">Projeto Educa+ Bahia</a>
+                  </p>
+                </div>
+                <div class="col-12 col-md-5">
+                  <p class="small resume-lines__descr animate-in-up">Ensino de lógica de programação e desenvolvimento de pensamento computacional em escolas públicas do Estado da Bahia no Brasil. 
+                    No projeto utilizei a linguagem Python para realizar atividades simples de lógica de programação com alunos do ensino básico.</p>
+                </div>
+              </div>
+
+              <div class="row g-0 resume-lines__item animate-in-up">
+                <div class="col-12 col-md-2">
+                  <span class="resume-lines__date animate-in-up">2023 - 2024</span>
+                </div>
+                <div class="col-12 col-md-5">
+                  <h5 class="resume-lines__title animate-in-up">Estágio em Desenvolvimento Full Stack</h5>
+                  <p class="resume-lines__source animate-in-up">na
+                    <a href="https://www.sefaz.feiradesantana.ba.gov.br/" class="text-link-bold" target="_blank">Secretaria da Fazenda (SEFAZ)</a>
+                  </p>
+                </div>
+                <div class="col-12 col-md-5">
+                  <p class="small resume-lines__descr animate-in-up">Desenvolvimento e manutenção de sistemas web, utilizando tecnologias como PHP, JavaScript e Oracle.</p>
+                </div>
+              </div>
+
+              <div class="row g-0 resume-lines__item animate-in-up">
+                <div class="col-12 col-md-2">
+                  <span class="resume-lines__date animate-in-up">2019 - 2024</span>
+                </div>
+                <div class="col-12 col-md-5">
+                  <h5 class="resume-lines__title animate-in-up">Voluntária IEEE </h5>
+                  <p class="resume-lines__source animate-in-up">no
+                    <a href="https://www.ieee.org/" class="text-link-bold" target="_blank">Instituto de Engenheiros Elétricos e Eletrônicos (IEEE)</a>
+                  </p>
+                </div>
+                <div class="col-12 col-md-5">
+                  <p class="small resume-lines__descr animate-in-up">Envolvida como membra do Programa de Professores em Serviço (TISP) (2021-2022),
+                    atuei como presidente do TISP (2022-2023), e
+                    liderei como Presidente do Ramo Estudantil IEEE UEFS (2023-2024).
+                    Além disso, ocupei funções como Coordenador de Atividades Pré-Universitárias e Coordenador de Treinamento e Integração do IEEE para o Comitê de Atividades Estudantis da
+                    Seção Nordeste do IEEE Brasil.</p>
+                </div>
+              </div>
+
+              <div class="row g-0 resume-lines__item animate-in-up">
+                <div class="col-12 col-md-2">
+                  <span class="resume-lines__date animate-in-up">2019 - 2023</span>
+                </div>
+                <div class="col-12 col-md-5">
+                  <h5 class="resume-lines__title animate-in-up">Pesquisadora Voluntária</h5>
+                  <p class="resume-lines__source animate-in-up">no
+                    <a href="https://sites.google.com/site/lessuefs/in%C3%ADcio?authuser=0" class="text-link-bold" target="_blank">Laboratório de Educação, Software e Sistemas</a>
+                  </p>
+                </div>
+                <div class="col-12 col-md-5">
+                  <p class="small resume-lines__descr animate-in-up">Estive ativamente envolvida no desenvolvimento de produtos educacionais para o ensino de ciência da computação e na promoção do pensamento computacional nas escolas.</p>
+                </div>
+              </div>
+
+              <div class="row g-0 resume-lines__item animate-in-up">
+                <div class="col-12 col-md-2">
+                  <span class="resume-lines__date animate-in-up">2021 - 2022</span>
+                </div>
+                <div class="col-12 col-md-5">
+                  <h5 class="resume-lines__title animate-in-up">Pesquisadora PIBEX</h5>
+                  <p class="resume-lines__source animate-in-up">na
+                    <a href="https://www.uefs.br/" class="text-link-bold" target="_blank">Universidade Estadual de Feira de Santana</a>
+                  </p>
+                </div>
+                <div class="col-12 col-md-5">
+                  <p class="small resume-lines__descr animate-in-up">Bolsista PIBEX no programa de desenvolvimento de software e sistemas educacionais.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="content__block">
+            <div class="section-h3 section-h3-grid">
+              <h3 class="h3__title animate-in-up">Minhas linguagens favoritas</h3>
+            </div>
+          </div>
+
+          <div class="content__block grid-block block-large">
+            <div class="tools-cards d-flex justify-content-start flex-wrap">
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-html.svg" alt="Tools Icon">
+                  <h6 class="tools-cards__caption animate-in-up">HTML</h6>
+                </div>
+              </div>
+
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-css.svg" alt="Tools Icon">
+                  <h6 class="tools-cards__caption animate-in-up">CSS</h6>
+                </div>
+              </div>
+
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-javascript.svg" alt="Tools Icon">
+                  <h6 class="tools-cards__caption animate-in-up">JavaScript</h6>
+                </div>
+              </div>
+
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-PHP.svg" alt="Tools Icon">
+                  <h6 class="tools-cards__caption animate-in-up">PHP</h6>
+                </div>
+              </div>
+
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-python.svg" alt="Tools Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Python</h6>
+                </div>
+              </div>
+
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-react.svg" alt="Tools Icon">
+                  <h6 class="tools-cards__caption animate-in-up">React</h6>
+                </div>
+              </div>
+
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-node.svg" alt="Tools Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Node JS</h6>
+                </div>
+              </div>
+
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-jquery.svg" alt="Tools Icon">
+                  <h6 class="tools-cards__caption animate-in-up">JQuery</h6>
+                </div>
+              </div>
+
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-bootstrap.svg" alt="Tools Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Bootstrap</h6>
+                </div>
+              </div>
+
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-oracle.svg" alt="Tools Icon">
+                  <h6 class="tools-cards__caption animate-in-up">Oracle</h6>
+                </div>
+              </div>
+
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                <div class="tools-cards__card">
+                  <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-mysql.svg" alt="Tools Icon">
+                  <h6 class="tools-cards__caption animate-in-up">MySql</h6>
+                </div>
+              </div>
+
+              <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <div class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-git.svg" alt="Tools Icon">
+                <h6 class="tools-cards__caption animate-in-up">Git</h6>
+              </div>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <div class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-github.svg" alt="Tools Icon">
+                <h6 class="tools-cards__caption animate-in-up">GitHub</h6>
+              </div>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <div class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-figma.svg" alt="Tools Icon">
+                <h6 class="tools-cards__caption animate-in-up">Figma</h6>
+              </div>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <div class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up" src="../../img/icons/icon-illustrator.svg" alt="Tools Icon">
+                <h6 class="tools-cards__caption animate-in-up">Adobe Illustrator</h6>
+              </div>
+            </div>
+
+          </div>
+
+
+        <section id="contact" class="inner contact">
+
+          <div class="content__block section-title">
+            <p class="h2__subtitle  animate-in-up">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"/>
+              </svg>
+              <span>Contato</span>
+            </p>
+            <h2 class="h2__title  animate-in-up">Envie-me uma mensagem!</h2>
+          </div>
+
+          <div class="content__block grid-block block-grid-large">
+            <div class="form-container">
+
+              <div class="form__reply centered text-center">
+                <i class="ph-bold ph-smiley reply__icon"></i>
+                <p class="reply__title">Enviado!</p>
+                <span class="reply__text">Obrigada por sua mensagem. Responderei o mais rápido possível.</span>
+              </div> 
+
+              <form class="contactForm" id="contact-form" action="https://formspree.io/f/xpzgvrwz" method="POST" onsubmit="return handleFormSubmission(event)">
+
+                <input type="hidden" name="form-name" value="contactForm">
+
+                <div class="container-fluid p-0">
+                  <div class="row gx-0">
+                    <div class="col-12 col-md-6 form__item animate-in-up">
+                      <input type="text" name="name" id="name" placeholder="Nome*" required>
+                    </div>
+                    <div class="col-12 col-md-6 form__item animate-in-up">
+                      <input type="email" name="email" id="email" placeholder="Email *" required>
+                    </div>
+                    <div class="col-12 col-md-6 form__item animate-in-up">
+                      <input type="tel" name="phone" id="phone" placeholder="Número de telefone">
+                    </div>
+                    <div class="col-12 col-md-6 form__item animate-in-up">
+                      <input type="text" name="subject" id="subject" placeholder="Assunto*" required>
+                    </div>
+                    <div class="col-12 form__item animate-in-up">
+                      <textarea type="text" name="message" id="message"  placeholder="Mensagem*" required></textarea>
+                    </div>
+                    <div class="col-12 form__item animate-in-up">
+                      <button class="btn btn-default btn-hover btn-hover-accent" type="submit">
+                        <span class="btn-caption">Enviar</span>
+                        <i class="ph-bold ph-paper-plane-tilt"></i>
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+
+        </section>
+
+        <footer style="width: 100%; display: flex; justify-content: end; padding-top: 15%; padding-bottom: 15%;">
+          &copy; Laís Baptista 2024
+        </footer>
+
+      </div>
+    </div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+      <div class="pswp__bg"></div>
+
+      <div class="pswp__scroll-wrap">
+
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+
+          <div class="pswp__top-bar">
+
+
+            <div class="pswp__counter"></div>
+
+            <button class="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
+            <button class="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
+            <button class="pswp__button pswp__button--zoom link-s" title="Zoom in/out"></button>
+
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+              <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left link-s" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right link-s" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+              <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="../../js/libs.min.js"></script>
+    <script>
+      const randomX = random(-400, 400);
+      const randomY = random(-200, 200);
+      const randomDelay = random(0, 50);
+      const randomTime = random(20, 40);
+      const randomTime2 = random(5, 12);
+      const randomAngle = random(-30, 150);
+
+      const blurs = gsap.utils.toArray(".blur");
+      blurs.forEach((blur) => {
+        gsap.set(blur, {
+          x: randomX(-1),
+          y: randomX(1),
+          rotation: randomAngle(-1)
+        });
+
+        moveX(blur, 1);
+        moveY(blur, -1);
+        rotate(blur, 1);
+      });
+
+      function rotate(target, direction) {
+        gsap.to(target, randomTime2(), {
+          rotation: randomAngle(direction),
+          ease: Sine.easeInOut,
+          onComplete: rotate,
+          onCompleteParams: [target, direction * -1]
+        });
+      }
+
+      function moveX(target, direction) {
+        gsap.to(target, randomTime(), {
+          x: randomX(direction),
+          ease: Sine.easeInOut,
+          onComplete: moveX,
+          onCompleteParams: [target, direction * -1]
+        });
+      }
+
+      function moveY(target, direction) {
+        gsap.to(target, randomTime(), {
+          y: randomY(direction),
+          ease: Sine.easeInOut,
+          onComplete: moveY,
+          onCompleteParams: [target, direction * -1]
+        });
+      }
+
+      function random(min, max) {
+        const delta = max - min;
+        return (direction = 1) => (min + delta * Math.random()) * direction;
+      }
+    </script>
+    <script src="../../js/app.js"></script>
+    <script src="../../js/gallery-init.js"></script>
+    
+  </body>
+</html>
