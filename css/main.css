@@ -331,7 +331,6 @@ body {
 section {
   position: relative;
   width: 100%;
-  overflow-x: hidden;
 }
 
 a {
