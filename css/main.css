@@ -25,6 +25,8 @@
  *  22. Features Testimonials
  *  23. Features Slider
  *  24. Features Socials
+ *  25. Scroll Top
+ *  26. Footer
  * ------------------------------------------------
  * Table of Contents End
  * ------------------------------------------------ */
@@ -4453,4 +4455,25 @@ form textarea:required:valid {
 /* Scroll Top End */
 /* ------------------------------------------------*/
 
+/* ------------------------------------------------*/
+/* Footer Start*/
+/* ------------------------------------------------*/
 
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+@media only screen and (max-width: 992px) {
+  footer{
+    justify-content: center;
+    height: 24rem;
+  }
+}
+
+/* ------------------------------------------------*/
+/* Footer End*/
+/* ------------------------------------------------*/
